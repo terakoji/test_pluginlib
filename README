@@ -1,0 +1,11 @@
+This is package for reproduction of pluginlib/issue #48.
+
+How To USE
+----------
+
+
+1. disable swap partiion. ( $ sudo swapoff -a )
+2. clone this package and build on your catkin workspace.
+3. Modify memory use. (src/test_pluginlib/image_transport_test.cpp ALLOC_SIZE)
+4. $ rosrun test_pluginlib image_transport_test
+5. For some reason test is abnormally terminated with a message plugin not found.
